@@ -4,11 +4,11 @@
 if ($host.Name -ne "ConsoleHost") {
     try {
         $path = "$Env:SystemRoot\Sysnative\WindowsPowerShell\v1.0\powershell.exe"
-        Start-Process -FilePath $path -ArgumentList "-Command ""iwr 'https://shorturl.at/nQ7Q8' | iex""" -Verb RunAs
+        Start-Process -FilePath $path -ArgumentList "-Command ""iwr 'https://tinyurl.com/KSWindowsScript' | iex""" -Verb RunAs
     }
     catch {
         $path = "$Env:SystemRoot\System32\WindowsPowerShell\v1.0\powershell.exe"
-        Start-Process -FilePath $path -ArgumentList "-Command ""iwr 'https://shorturl.at/nQ7Q8' | iex""" -Verb RunAs
+        Start-Process -FilePath $path -ArgumentList "-Command ""iwr 'https://tinyurl.com/KSWindowsScript' | iex""" -Verb RunAs
     }
 }
 
